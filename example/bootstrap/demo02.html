@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--参考www.ycku.com教程-->
+<html lang="en">
+    <head>
+        <title>排版样式</title>
+        <meta charset="utf-8">
+        <!-- ie8支持最新渲染-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>   
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">      
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    </head>
+    <!--
+        条纹样式
+        响应式表格:table-responsive 小于768时有边框
+    -->
+    <body style="margin: 50px" class="table-responsive">
+        <!--第三章-->
+        <!--
+            基本格式
+            table table=striped 条纹色，一行深一行浅
+            table table-bordered 添加边框
+            table table-hover 鼠标悬停
+
+            状态类：tr中的
+            active
+            success
+            info
+            warning
+            danger
+
+
+            隐藏：sr-only
+            
+            流体式：
+        -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>编号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>姓名1</td>
+                    <td>性别1</td>
+                    <td>年龄1</td>
+                </tr>
+                <tr class="success">
+                    <td>2</td>
+                    <td>姓名2</td>
+                    <td>性别2</td>
+                    <td>年龄3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>姓名3</td>
+                    <td>性别3</td>
+                    <td>年龄3</td>
+                </tr>
+            </thead>
+        </table>
+        <!--
+            按钮：
+            btn  btn-default 默认
+            btn btn-sucess
+            btn btn-info
+            btn btn-warning
+            btn btn-danger
+            btn btn-primary
+            btn btn-link
+        
+            按钮大小：
+            btn-lg
+            btn
+            btn-sm
+            btn-xs
+
+            块级按钮
+            块级换行
+            btn-block 占用整行
+            active 鼠标点击的样子
+            disabled 禁用
+        -->
+        <a href="###">link</a>
+        <button class="btn btn-link">按钮</button>
+        <button class="btn btn-danger disabled">按钮</button>
+    </body>
+</html>
