@@ -1,79 +1,185 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Bootstrap 实例</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
-  <script src="//apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="//apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-</head>
-<body>
-<p>这是一个段落</p>
-<p class="lead" >这是一个被修饰的段落!</p>
-<p class="text-danger" >这是一个被修饰的段落!danger</p>
-<p class="text-info" >这是一个被修饰的段落!info</p>
-<p class="text-warning" >这是一个被修饰的段落!warning</p>
-<p class="text-success" >这是一个被修饰的段落!success</p>
-<p class="text-primary" >这是一个被修饰的段落!primary</p>
-<p class="text-muted" >这是一个被修饰的段落!muted</p>
-<hr>
-<h1>列表</h1>
-<ul class="list-unstyled">
-  <li >一列</li>
-  <li >二列</li>
-  <li >三列</li>
-</ul>
-<ul class="list-inline">
-  <li >一列</li>
-  <li >二列</li>
-  <li >三列</li>
-</ul>
-<dl class="dl-horizontal">
-  <dt >标题1</dt>
-  <dd >内容1</dd>
-  <dt >标题2</dt>
-  <dd >内容2</dd>
-</dl>
-<ul>
-  <li >一列</li>
-  <li >二列</li>
-  <li >三列</li>
-</ul>
-<hr>
-<h1>文本</h1>
-<p class="text-capitalize">abcd首字母大写</p>
-<p class="text-justify">这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
-  行测试内容这是个换行测试内容这是个换行测试内容
-  这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
-  行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
-  行测试内容这是个换行测试内容这是个换行测试内容</p>
-  <p class="text-nowrap">这是个不换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
-      行测试内容这是个换行测试内容这是个换行测试内容
-      这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
-      行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
-      行测试内容这是个换行测试内容这是个换行测试内容</p>
-  <abbr title="这个缩写没有添加修饰">no decorate</abbr><br/>
-  <abbr class="initialism" title="这个缩写添加了修饰">decorate the tag</abbr>
+<!--参考www.ycku.com教程-->
+<html lang="en">
+    <head>
+        <title>排版样式</title>
+        <meta charset="utf-8">
+        <!-- ie8支持最新渲染-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>   
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">      
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    </head>
+    <body>
+        <!--
+            mark变颜色，标注的意思
+            del加删除线
+            s 无用
+            ins 插入
+            strong 加粗
+            em 倾斜
 
-  <blockquote>这是一段引用的内容，但没修饰</blockquote>
-  <blockquote class="blockquote-reverse">这段引用内容修饰了</blockquote>
-  
-  <pre>
-      这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
-      这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
-      这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
-      这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
-      这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
-  </pre>
-  <pre class="pre-scrollable">
-    这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
-    这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
-    这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
-    这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
-  </pre>
-  <code>
-      这是要展示源码呢
-  </code>
-</body>
+            div添加h1-6样式可以出现h1-6标签的效果
+        -->
+        
+        <p>Bootstrap</p>
+        <div class="h1">Bootstrap框架0，我是个冒充的h1</div>
+        <h1>Bootstrap<small>框架1</small></h1>
+        <h2>Bootstrap<mark>框架2</mark></h2>
+        <h3>Bootstrap<del>框架3</del></h3>
+        <h4>Bootstrap<s>框架4</s></h4>
+        <h4>Bootstrap<ins>框架5</ins></h4>
+        <h4>Bootstrap<u>框架6</u></h4>
+        <br/>
+
+        <!--  对齐方式
+                class:
+                    text-left
+                    text-center
+                    text-right
+                    text-nowrap 不换行
+
+        -->
+        <label class="text-nowrap">
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+        </label>
+        <hr>
+        <!--通过设置标签为样式来改变标签原来效果-->
+        <span class="h1">Bootstrap</span>
+        <!--
+            大写
+            text-uppercase
+            text-lowercase
+            text-capitalize 首字母大写
+            引用文本<blockquote>
+            blockquote-reverse 居右
+            pull-right
+            initialism 放大显示
+        -->
+        <label class="text-capitalize">
+            abcDEFghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+            abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+        </label>
+        <hr>
+        <abbr class="initialism">Bootstrap框架</abbr>
+        <address>地址</address>
+        <blockquote class="blockquote-reverse">引用文本</blockquote>
+        <!--
+            列表排版
+            list-unstyled 移除默认样式
+            list-inline 包括前者样式
+        -->
+        <ul class="list-unstyled list-inline">
+            <li>Bootstrap1</li>
+            <li>Bootstrap2</li>
+            <li>Bootstrap3</li>
+        </ul>
+        <!--
+            水平排列
+            dt标题
+            dd内容
+        -->
+        <dl class="dl-horizontal">
+            <dt>Bootstrap</dt>
+            <dd>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</dd>
+        </dl>
+        <!--
+            代码:加颜色了
+            <code>
+            <kbd>
+            <pre>
+            <var>
+            <samp>
+        -->
+        <code>&lt;section&gt;</code><br/>
+        press <kbd>ctr;</kbd>
+        <pre> please input .....</pre>
+
+        <hr>
+
+        <p>这是一个段落</p>
+        <p class="lead" >这是一个被修饰的段落!</p>
+        <p class="text-danger" >这是一个被修饰的段落!danger</p>
+        <p class="text-info" >这是一个被修饰的段落!info</p>
+        <p class="text-warning" >这是一个被修饰的段落!warning</p>
+        <p class="text-success" >这是一个被修饰的段落!success</p>
+        <p class="text-primary" >这是一个被修饰的段落!primary</p>
+        <p class="text-muted" >这是一个被修饰的段落!muted</p>
+        <hr>
+        <h1>列表</h1>
+        <ul class="list-unstyled">
+        <li >一列</li>
+        <li >二列</li>
+        <li >三列</li>
+        </ul>
+        <ul class="list-inline">
+        <li >一列</li>
+        <li >二列</li>
+        <li >三列</li>
+        </ul>
+        <dl class="dl-horizontal">
+        <dt >标题1</dt>
+        <dd >内容1</dd>
+        <dt >标题2</dt>
+        <dd >内容2</dd>
+        </dl>
+        <ul>
+        <li >一列</li>
+        <li >二列</li>
+        <li >三列</li>
+        </ul>
+        <hr>
+        <!--
+            text-justify 默认功能吧
+        -->
+        <h1>文本</h1>
+        <p class="text-capitalize">abcd首字母大写</p>
+        <hr>
+        <p class="text-justify">这是个自动换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+        行测试内容这是个换行测试内容这是个换行测试内容
+        这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+        行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+        行测试内容这是个换行测试内容这是个换行测试内容</p>
+        <hr>
+        <p class="text-nowrap">这是个不换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+            行测试内容这是个换行测试内容这是个换行测试内容
+            这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+            行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+            行测试内容这是个换行测试内容这是个换行测试内容</p>
+        <abbr title="这个缩写没有添加修饰">no decorate</abbr><br/>
+        <abbr class="initialism" title="这个缩写添加了修饰">decorate the tag</abbr>
+
+        <blockquote>这是一段引用的内容，但没修饰</blockquote>
+        <blockquote class="blockquote-reverse">这段引用内容修饰了</blockquote>
+        
+        <pre>
+            这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
+            这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
+            这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
+            这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
+            这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
+        </pre>
+        <!--
+            pre-scrollable 下边的预览滚动条
+        -->
+        <pre class="pre-scrollable">
+            这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
+            这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
+            这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
+            这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
+        </pre>
+        <code>
+            这是要展示源码呢
+        </code>
+    </body>
 </html>

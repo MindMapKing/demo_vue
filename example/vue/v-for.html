@@ -4,11 +4,15 @@
         <title>v-for实例</title>
         <meta carset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script type="text/javascript" src="../assets/js/vue.js"></script>
+        <script type="text/javascript" src="../../assets/js/vue.js"></script>
     </head>
     <body>
         <h1>v-for实例</h1>
         <hr>
+        <!--
+            1、v-for是vue添加到标签上的，用于遍历
+            2、遍历时可以获取索引
+        -->
         <div id="app">
           <ul>
               <li v-for="item in itemlist">
@@ -34,6 +38,12 @@
                         {name:'king',age:14}
                     ]
                 },
+                /**
+                 *  1、用于对定义数据加载后的处理
+                 *  2、数组有个sort方法，接收一个函数用于重排序元素
+                 *  3、定义的方法中的两个元素是遍历时的两个元素
+                 *  4、数值可以加减，其他的值可以比较大小(ASC)
+                 * */
                 computed:{
                     itemlist:function(){
                         return this.items.sort(sortNumber);

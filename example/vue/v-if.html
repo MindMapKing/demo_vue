@@ -4,11 +4,14 @@
         <title>v-if实例</title>
         <meta carset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script type="text/javascript" src="../assets/js/vue.js"></script>
+        <script type="text/javascript" src="../../assets/js/vue.js"></script>
     </head>
     <body>
         <h1>v-if&v-else&v-show</h1>
         <hr>
+        <!--
+            v-if用于做判断，失败则元素不会显示
+        -->
         <div id="app">
            <div v-if="isLogin">你好，你已经登陆了</div>
            <div v-else>请登录</div>
