@@ -17,22 +17,24 @@
     </head>
     <body>
         <!--
-            mark变颜色
+            mark变颜色，标注的意思
             del加删除线
             s 无用
             ins 插入
             strong 加粗
             em 倾斜
+
+            div添加h1-6样式可以出现h1-6标签的效果
         -->
         
         <p>Bootstrap</p>
-        
-        <h1>Bootstrap<small>框架</small></h1>
-        <h2>Bootstrap<mark>框架</mark></h2>
-        <h3>Bootstrap<del>框架</del></h3>
-        <h4>Bootstrap<s>框架</s></h4>
-        <h4>Bootstrap<ins>框架</ins></h4>
-        <h4>Bootstrap<u>框架</u></h4>
+        <div class="h1">Bootstrap框架0，我是个冒充的h1</div>
+        <h1>Bootstrap<small>框架1</small></h1>
+        <h2>Bootstrap<mark>框架2</mark></h2>
+        <h3>Bootstrap<del>框架3</del></h3>
+        <h4>Bootstrap<s>框架4</s></h4>
+        <h4>Bootstrap<ins>框架5</ins></h4>
+        <h4>Bootstrap<u>框架6</u></h4>
         <br/>
 
         <!--  对齐方式
@@ -43,6 +45,15 @@
                     text-nowrap 不换行
 
         -->
+        <label class="text-nowrap">
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+            我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！我要测试文本效果！
+        </label>
+        <hr>
         <!--通过设置标签为样式来改变标签原来效果-->
         <span class="h1">Bootstrap</span>
         <!--
@@ -50,22 +61,28 @@
             text-uppercase
             text-lowercase
             text-capitalize 首字母大写
-            引用文本
+            引用文本<blockquote>
             blockquote-reverse 居右
             pull-right
+            initialism 放大显示
         -->
+        <label class="text-capitalize">
+            abcDEFghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+            abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+        </label>
+        <hr>
         <abbr class="initialism">Bootstrap框架</abbr>
         <address>地址</address>
         <blockquote class="blockquote-reverse">引用文本</blockquote>
         <!--
             列表排版
             list-unstyled 移除默认样式
-            list-inline
+            list-inline 包括前者样式
         -->
         <ul class="list-unstyled list-inline">
-            <li>Bootstrap</li>
-            <li>Bootstrap</li>
-            <li>Bootstrap</li>
+            <li>Bootstrap1</li>
+            <li>Bootstrap2</li>
+            <li>Bootstrap3</li>
         </ul>
         <!--
             水平排列
@@ -122,13 +139,18 @@
         <li >三列</li>
         </ul>
         <hr>
+        <!--
+            text-justify 默认功能吧
+        -->
         <h1>文本</h1>
         <p class="text-capitalize">abcd首字母大写</p>
-        <p class="text-justify">这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
+        <hr>
+        <p class="text-justify">这是个自动换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
         行测试内容这是个换行测试内容这是个换行测试内容
         这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
         行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
         行测试内容这是个换行测试内容这是个换行测试内容</p>
+        <hr>
         <p class="text-nowrap">这是个不换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
             行测试内容这是个换行测试内容这是个换行测试内容
             这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换行测试内容这是个换
@@ -147,6 +169,9 @@
             这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
             这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码这个是没修时的源码
         </pre>
+        <!--
+            pre-scrollable 下边的预览滚动条
+        -->
         <pre class="pre-scrollable">
             这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
             这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码这是是修饰的源码
