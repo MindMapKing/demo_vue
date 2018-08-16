@@ -4,11 +4,15 @@
         <title>v-text实例</title>
         <meta carset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script type="text/javascript" src="../assets/js/vue.js"></script>
+        <script type="text/javascript" src="../../assets/js/vue.js"></script>
     </head>
     <body>
         <h1>v-text</h1>
         <hr>
+        <!--
+            1、大括号的显示值和使用v-text的效果是一样的
+            2、可以使用v-html 来直接渲染html字符串
+        -->
         <div id="app">
            <span>{{message}}</span>=<span v-text="message"></span>
             <span v-html="htmlstr"></span>
