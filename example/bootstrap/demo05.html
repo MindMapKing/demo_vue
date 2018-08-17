@@ -141,7 +141,9 @@
         </div>
     </div>
     <hr>
-    <!--下拉-->
+    <!--
+        下拉:这个正好说明按钮组的作用
+    -->
     <div class="btn-group">
         <button type="button" class="btn btn-primary">下拉</button>
         <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -160,5 +162,22 @@
             <li>选项三</li>
         </ul>
     </div>
+    <!--
+        相比，两个按钮就要使用btn-group
+    -->
+    <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">下拉<span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">菜单一</li>
+                <li><a href="#">选项一</a></li>
+                <li>选项二</li>
+                <li>选项三</li>
+                <li class="divider"></li>
+                <li class="dropdown-header">菜单二</li>
+                <li>选项一</li>
+                <li>选项二</li>
+                <li>选项三</li>
+            </ul>
+        </div>
 </body>
 </html>
