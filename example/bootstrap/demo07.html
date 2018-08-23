@@ -1,32 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-   <title>Bootstrap 实例 - 响应式实用工具</title>
-   <link href="//libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-   <script src="//libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-   <script src="//libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Project name</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
-                    <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
-                    <li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
-                </ul>
-            </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
+<!DOCTYPE html><html><head>
+    <title>Bootstrap 实例 - 固定到顶部</title>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script></head><body><nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+       <a class="navbar-brand" href="#">W3Cschool</a>
     </div>
+    <div>
+       <ul class="nav navbar-nav">
+          <li class="active"><a href="#">iOS</a></li>
+          <li><a href="#">SVN</a></li>
+          <li class="dropdown">
+             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Java <b class="caret"></b>
+             </a>
+             <ul class="dropdown-menu">
+                <li><a href="#">jmeter</a></li>
+                <li><a href="#">EJB</a></li>
+                <li><a href="#">Jasper Report</a></li>
+                <li class="divider"></li>
+                <li><a href="#">分离的链接</a></li>
+                <li class="divider"></li>
+                <li><a href="#">另一个分离的链接</a></li>
+             </ul>
+          </li>
+       </ul>
+    </div></nav>
+    
     <hr>
     <!--
         按钮上设置图标
@@ -193,5 +193,4 @@
             <li>选项三</li>
         </ul>
     </div>
-</body>
-</html>
+</body></html>
