@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>排版样式</title>
+        <meta charset="utf-8">
+        <!-- ie8支持最新渲染-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap的HTML标准模板</title>   
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">      
+        <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+        <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+        <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    </head>
+    <body>
+        <div class="navbar navbar-default">
+            <ul class="nav nav-pills ">
+                <li class="active navbar-header"><a class="" href="">Home</a></li>
+                <li class="disabled"><a href="">选项二</a></li>
+                <li><a href="">选项三</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <table class="table table-striped table-hover table-bordered table-responsive">
+                <thead>
+                    <th>序号</th><th >编号</th><th>姓名</th><th >年龄</th><th>地址</th><th>手机号</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td><td>001</td><td>Uncle Zhu01</td><td>20</td><td>浙江1</td><td>18758004800</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td>002</td><td>Uncle Zhu02</td><td>21</td><td>浙江2</td><td>18758004802</td>
+                    </tr>
+                    <tr>
+                        <td>3</td><td>003</td><td>Uncle Zhu03</td><td>22</td><td>浙江3</td><td>18758004803</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form role="form">
+                <div class="form-group col-md-4 form-inline"  >
+                    <label class="control-label">姓名:</label>
+                    <input type="text" class="form-control input-lg" value="Uncl Zhu"/>
+                </div>
+                <div class="form-group col-md-4 form-inline has-success">
+                    <label class="control-label">性别:</label>
+                    <input type="text" class="form-control" value="男"/>
+                </div>
+                <div class="form-group col-md-4 form-inline">
+                    <label class="control-label">年龄:</label>
+                    <input type="text" class="form-control" value="30"/>
+                </div>
+                <div class="form-group col-md-12">
+                    <label class="control-label">个人简介:</label>
+                    <textarea class="form-control" rows="4" style="width:45%"></textarea>
+                </div>
+                <div class="form-group col-md-12 checkbox">
+                    <label class="control-label checkbox-inline">
+                        <input type="checkbox" value="femal">男
+                    </label>
+                    <label class="control-label checkbox-inline">
+                        <input type="checkbox" value="mal">女
+                    </label>
+                </div>
+                <div class="form-group col-md-12 radio">
+                    <label class="control-label radio-inline">
+                        <input type="radio" value="femal" name="sex">男
+                    </label>
+                    <label class="control-label checkbox-inline">
+                        <input type="radio" value="mal" name="sex">女
+                    </label>
+                </div>
+                <div class="form-group col-md-12">
+                    <label class="control-label ">选择列表:</label>
+                    <select>
+                        <option>--请选择--</option>
+                        <option selected>Uncle Zhu</option>
+                        <option>毛泽东</option>
+                        <option>林正英</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-12">
+                    <label class="control-label">选择列表:</label>
+                    <p>未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                    <p>
+                        未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                    </p>
+                    <p>未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                    <p class="form-control-static">
+                        被修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        被修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        被修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        被修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                        被修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                    </p>
+                    <p>未修饰的文本ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff</p>
+                </div>
+                <div class="divider"></div>
+                <div class="form-group col-md-12">
+                    <button class="btn btn-default active">被触发的按钮</button>
+                    <button class="btn btn-default">被触发的按钮</button>
+                </div>
+                <div class="form-group col-md-12 btn-toobar">
+                    <div class="btn-group">
+                        <button class="btn btn-default">按钮1</button>
+                        <button class="btn btn-default">按钮2</button>
+                        <button class="btn btn-default">按钮3</button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-default">按钮4</button>
+                        <button class="btn btn-default">按钮5</button>
+                        <button class="btn btn-default">按钮6</button>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-addon">@</span>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">搜索</button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
