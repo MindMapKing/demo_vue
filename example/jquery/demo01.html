@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--参考www.ycku.com教程-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+        <script src="http://libs.cdnjs.net/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+        <script src="http://libs.cdnjs.net/jquery-validate/1.14.0/localization/messages_zh.js"></script>
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">      
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+        <script>
+            $(function(){
+               
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <fieldset>
+                    <legend>验证完整表单</legend>
+                    <div class="form-group form-inline">
+                        <label class="control-label">名字:</label>
+                        <input type="text" class="form-control" name="name"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label">姓氏:</label>
+                        <input type="text" class="form-control" name="firstName"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label" name="userName">用户名:</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label">密码:</label>
+                        <input type="text" class="form-control" name="password"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label" name="confirmPwd">验证密码:</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label">email:</label>
+                        <input type="text" class="form-control" name="email"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label">请同意我们的声明</label>
+                        <input type="checkbox" class="form-control" name="agree"/>
+                    </div>
+                    <div class="form-group form-inline">
+                        <label class="control-label">我乐意接收新信息</label>
+                        <input type="checkbox" class="form-control" name="msg"/>
+                    </div file>
+                    <div class="form-group from-inline">
+                        <fieldset>
+                            <legend>主题 (至少选择两个) - 注意：如果没有勾选“我乐意接收新信息”以下选项会隐藏，但我们这里作为演示让它可见</legend>
+                            <div class="checkbox-inline">
+                                <label class="control-label">
+                                        <input type="checkbox" name="mf"/>Marketflash
+                                </label>
+                            </div>
+                            <div class="radio-inline">
+                                <label class="control-label">
+                                        <input type="radio" name="lf"/>Latest fuzz
+                                </label>
+                            </div>
+                            <div class="radio-inline">
+                                <label class="control-label">
+                                        <input type="radio" name="mld"/>Mailing list digester
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <button type="submit">提交</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
