@@ -8,40 +8,77 @@
         <script src="http://libs.cdnjs.net/jquery-validate/1.14.0/localization/messages_zh.js"></script>
         <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">      
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+        <style>
+            .error{color:red}
+        </style>
         <script>
             $(function(){
-               
+               $("#submitForm").validate({
+                   rules:{
+                       lastName:"required",
+                       firstName:"required",
+                       userName:{
+                           required:true,
+                           minlength:2
+                       },
+                       password:{
+                           minlength:5,
+                           required:true
+                       },
+                       confirmPwd:{
+                           minlength:5,
+                           required:true,
+                           equalTo:"#password"
+                       },
+                       email:{
+                           required:true,
+                           email:true
+                       },
+                       agree:"required",
+                       topic:{
+                           required:"#selector:checked",
+                           minlength:2
+                       }
+                   },
+                   messages:{
+                       firstName:"输入名字，亲",
+                       confirmPwd:{
+                           required:"必须的，亲",
+                           minlength:"长度,亲"
+                       }
+                   }
+               });
             });
         </script>
     </head>
     <body>
         <div class="container">
-            <form>
+            <form action="" method="post" id="submitForm">
                 <fieldset>
                     <legend>验证完整表单</legend>
                     <div class="form-group form-inline">
                         <label class="control-label">名字:</label>
-                        <input type="text" class="form-control" name="name"/>
+                        <input type="text" class="form-control" name="lastName"/>
                     </div>
                     <div class="form-group form-inline">
                         <label class="control-label">姓氏:</label>
                         <input type="text" class="form-control" name="firstName"/>
                     </div>
                     <div class="form-group form-inline">
-                        <label class="control-label" name="userName">用户名:</label>
-                        <input type="text" class="form-control"/>
+                        <label class="control-label">用户名:</label>
+                        <input type="text" class="form-control" name="userName"/>
                     </div>
                     <div class="form-group form-inline">
                         <label class="control-label">密码:</label>
-                        <input type="text" class="form-control" name="password"/>
+                        <input type="password" class="form-control" name="password" id="password"/>
                     </div>
                     <div class="form-group form-inline">
-                        <label class="control-label" name="confirmPwd">验证密码:</label>
-                        <input type="text" class="form-control"/>
+                        <label class="control-label">验证密码:</label>
+                        <input type="password" class="form-control" name="confirmPwd" id="confirmPwd"/>
                     </div>
                     <div class="form-group form-inline">
                         <label class="control-label">email:</label>
-                        <input type="text" class="form-control" name="email"/>
+                        <input type="email" class="form-control" name="email"/>
                     </div>
                     <div class="form-group form-inline">
                         <label class="control-label">请同意我们的声明</label>
@@ -49,24 +86,24 @@
                     </div>
                     <div class="form-group form-inline">
                         <label class="control-label">我乐意接收新信息</label>
-                        <input type="checkbox" class="form-control" name="msg"/>
+                        <input type="checkbox" class="form-control" name="selector" id="selector"/>
                     </div file>
                     <div class="form-group from-inline">
                         <fieldset>
                             <legend>主题 (至少选择两个) - 注意：如果没有勾选“我乐意接收新信息”以下选项会隐藏，但我们这里作为演示让它可见</legend>
                             <div class="checkbox-inline">
                                 <label class="control-label">
-                                        <input type="checkbox" name="mf"/>Marketflash
+                                    <input type="checkbox" name="topic" id="topic"/>Marketflash
                                 </label>
                             </div>
                             <div class="radio-inline">
                                 <label class="control-label">
-                                        <input type="radio" name="lf"/>Latest fuzz
+                                    <input type="checkbox" name="topic" id="topic"/>Latest fuzz
                                 </label>
                             </div>
                             <div class="radio-inline">
                                 <label class="control-label">
-                                        <input type="radio" name="mld"/>Mailing list digester
+                                    <input type="checkbox" name="topic" id="topic"/>Mailing list digester
                                 </label>
                             </div>
                         </fieldset>
