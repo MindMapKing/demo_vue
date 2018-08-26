@@ -15,12 +15,30 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
     </head>
     <body>
-        <div class="navbar navbar-default">
-            <ul class="nav nav-pills ">
-                <li class="active navbar-header"><a class="" href="">Home</a></li>
-                <li class="disabled"><a href="">选项二</a></li>
-                <li><a href="">选项三</a></li>
-            </ul>
+        <nav class="navbar navbar-default navbar-inverse" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航栏</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Home</a>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">选项二</a></li>
+                    <li><a href="#">选项三</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <ol class="breadcrumb">
+                <li><a href="">Home</a></li>
+                <li><a href="">2018</a></li>
+                <li><a href="">08</a></li>
+            </ol>
         </div>
         <div class="container">
             <table class="table table-striped table-hover table-bordered table-responsive">
