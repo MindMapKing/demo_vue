@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>提示工具</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatibel" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+        <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script>
+            $(function(){
+                $("[data-toggle='tooltip']").tooltip({animation:false});
+            });
+        </script>
+    </head>
+    <body>
+        <h4>提示工具(Tooltip)插件-锚</h4>
+        <a href="#" class="" data-toggle="tooltip" title="默认的tooltip">默认的tooltip</a>
+        这是一个<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="left" title="左侧的tooltip">左侧的tooltip</a>
+        这是一个<a href="#" data-toggle="tooltip" data-placement="top" title="顶部的tooltip">顶部的tooltip</a>
+        这是一个<a href="#" data-toggle="tooltip" data-placement="bottom" title="底部的tooltip">底部的tooltip</a>
+        这是一个<a href="#" data-toggle="tooltip" data-placement="right" title="右侧的tooltip">右侧的tooltip</a><br>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" title="默认的tooltip">默认的tootip</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="左侧的tooltip">左侧的tooltip</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="顶部的tooltip">顶部的tooltip</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="底部的tooltip">底部的tooltip</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="右侧的tooltip">右侧的tooltip</button>
+    </body>
+</html>

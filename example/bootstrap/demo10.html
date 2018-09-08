@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>滚动插件</title>
+        <meta charset="utf-8">
+         <!-- ie8支持最新渲染-->
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <title>Bootstrap的HTML标准模板</title>   
+         <!-- Bootstrap -->
+         <link rel="stylesheet" href="//apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">      
+         <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+         <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+         <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
+    </head>
+    <body>
+        <nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">
+            <!--navbar-header是用于构造汉堡按钮-->
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">教程名称</a>
+            </div>
+            <!--navbar-collapse是根据窗口动态响应-->
+            <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+                <ul class="nav navbar-nav">
+                    <li><a href="#ios">IOS</a></li>
+                    <li><a href="#svn">SVN</a></li>
+                    <li><a href="#ok">OK</a></li>
+                    <li><a href="#ok1">OK</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div data-spy="scroll" data-target="#navbar-example" data-offset="0"  style="height:200px;overflow:auto; position: relative;">
+            <h4 id="ios">IOS</h4>
+            <p>
+                iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple 
+                TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。
+            </p>
+            <h4 id="svn">SVN</h4>
+            <p>
+                Apache Subversion，通常缩写为 SVN，是一款开源的版本控制系统软件。Subversion 由 CollabNet 公司在 2000 年创建。但是现在它已经发展为 Apache Software Foundation 的一个项目，因此拥有丰富的开发人员和用户社区。
+            </p>
+            <h4 id="ok">OK</h4>
+            <p>
+                    “前程无忧”(NASDAQ:JOBS)是中国具有广泛影响力的人力资源服务供应商,在美国上市的中国人力资源服务企业,创立了网站+猎头+RPO+校园招聘+管理软件的全方位招聘方案.目前有效注册用户过1亿,日招聘职位过500万,日浏览页面过3亿,每周多达4,200万份简历通过51job发送到企业.
+            </p>
+            <h4 id="ok1">OK1</h4>
+            <p>
+                    “前程无忧”(NASDAQ:JOBS)是中国具有广泛影响力的人力资源服务供应商,在美国上市的中国人力资源服务企业,创立了网站+猎头+RPO+校园招聘+管理软件的全方位招聘方案.目前有效注册用户过1亿,日招聘职位过500万,日浏览页面过3亿,每周多达4,200万份简历通过51job发送到企业.
+            </p>
+        </div>
+    </body>
+</html>
